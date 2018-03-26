@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://WEB.com/" targetNamespace="http://WEB.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="hello" type="tns:hello" />
+  <xs:element name="helloResponse" type="tns:helloResponse" />
+  <xs:element name="validacion" type="tns:validacion" />
+  <xs:element name="validacionResponse" type="tns:validacionResponse" />
+  <xs:complexType name="validacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="pass" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="validacionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hello">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="helloResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
