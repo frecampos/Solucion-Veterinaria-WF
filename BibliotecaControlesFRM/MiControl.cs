@@ -17,6 +17,7 @@ namespace BibliotecaControlesFRM
             InitializeComponent();
         }
         public string Mensaje { get; set; }
+
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             string rut = txtRut.Text;
@@ -33,6 +34,7 @@ namespace BibliotecaControlesFRM
                 SqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
+                    MessageBox.Show("mensaje:" + Mensaje);
                     MessageBox.Show(dr[1].ToString() + " " + dr[2].ToString()+" "+dr[3].ToString());
                     cone.Close();
                     return;

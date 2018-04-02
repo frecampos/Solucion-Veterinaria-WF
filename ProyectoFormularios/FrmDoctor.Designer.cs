@@ -161,10 +161,10 @@
             // 
             // miControl1
             // 
-            this.miControl1.Location = new System.Drawing.Point(432, 12);
+            this.miControl1.Location = new System.Drawing.Point(442, 13);
             this.miControl1.Mensaje = null;
             this.miControl1.Name = "miControl1";
-            this.miControl1.Size = new System.Drawing.Size(387, 109);
+            this.miControl1.Size = new System.Drawing.Size(383, 116);
             this.miControl1.TabIndex = 4;
             // 
             // FrmDoctor

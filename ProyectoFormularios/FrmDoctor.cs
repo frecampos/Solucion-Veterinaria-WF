@@ -19,7 +19,7 @@ namespace ProyectoFormularios
 
         private void FrmDoctor_Load(object sender, EventArgs e)
         {
-            
+            miControl1.Mensaje = "Busqueda de Doctores";
         }
     }
 }
